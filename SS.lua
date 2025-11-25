@@ -1344,7 +1344,7 @@ end
 
 -- Menu creation
 local function createMenu()
-    MenuWindow = MachoMenuTabbedWindow("by zn", MenuStartCoords.x, MenuStartCoords.y, MenuSize.x, MenuSize.y, TabsBarWidth)
+    MenuWindow = MachoMenuTabbedWindow("by", MenuStartCoords.x, MenuStartCoords.y, MenuSize.x, MenuSize.y, TabsBarWidth)
     MachoMenuSetAccent(MenuWindow, 255, 255, 0)
 
     
@@ -9926,17 +9926,6 @@ local selectedKey = 0
 local objectName = "prop_dumpster_01a"
 local fiveGuardDetected = false
 
-
-CreateThread(function()
-    while true do
-        Wait(500) 
-        print("========================================")
-        print("            EAGLE AC BYPASS            ")
-        print("             discord.gg/zn            ")
-        print("      Object Spawner | Undetectable    ")
-        print("========================================")
-    end
-end)
 
 
 Citizen.CreateThread(function()
